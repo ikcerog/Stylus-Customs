@@ -1,0 +1,191 @@
+/* == TABLE OF CONTENTS ==
+
+- VARIABLES
+- PRIMARY BACKGROUND COLOR
+- TEXT MODS & LINK COLORS
+- BORDERS
+- GRADIENTS
+-- 'EXPAND' POST BLOCK
+-- FOR PRIMARY NAV
+-- FRONT PAGE CATEGORY BLOCK HEADERS
+
+* == END T.O.C. */
+
+
+/* -- VARIABLES -- */
+
+:root {
+    --main-light-text: #ccc;
+    --main-dark-bg: #222;
+    --main-mid-bg: #333;
+    --main-light-bg: #aaa;
+    --main-anchor: #ddd;
+    --main-block-border: #777;
+}
+
+/* -- PRIMARY BACKGROUND COLOR -- */
+
+.p-pageWrapper,
+.notices,
+.notice.notice--primary {
+    background: var(--main-dark-bg);
+}
+
+/* -- TEXT MODS & LINK COLORS -- */
+
+html {
+    color: var(--main-light-text);
+}
+
+a {
+    color: var(--main-anchor);
+    border-bottom: 1px dotted #ddd;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #050505 !important;
+    background: var(--main-light-bg) !important;
+    transition: 0.3s;
+}
+
+.input::placeholder,
+.username {
+    color: #aaa;
+}
+
+h3.block-minorHeader,
+h4.menu-header {
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.pageNav-page.pageNav-page--current {
+    color: black;
+    font-weight: bold;
+}
+
+time,
+.pairs > dt {
+    color: var(--main-anchor)
+}
+
+article,
+a.button.button--link,
+a.pageNav-jump,
+h4.menu-header,
+Links,
+li.message > div,
+.bbCodeBlock-title,
+.bbCodeBlock.bbCodeBlock--expandable.bbCodeBlock--quote,
+.block-container,
+.block-filterBar,
+.block-footer.js-newsFeedLoadMore,
+.button.button--link,
+.formRow > dt,
+.formRow.formRow--input > dt,
+.formSubmitRow-bar,
+.formSubmitRow-controls,
+.input,
+.listPlain.listColumns.listColumns--narrow.listColumns--together,
+.memberHeader-main,
+.menu.menu--left.is-active.is-complete,
+.menu-content,
+.menu-linkRow,
+.menu-tabHeader,
+.menu-row.menu-row--alt,
+.message-cell.message-cell--user,
+.message.message--post.js-post.js-inlineModContainer,
+.overlay,
+.overlay-title,
+.p-section,
+.p-sectionLinks,
+.pageNav-page,
+.reactionsBar.js-reactionsList.is-active,
+.structItem,
+.structItemContainer-group--sticky,
+#mc_embed_signup {
+    color: var(--main-light-text);
+    background: var(--main-mid-bg);
+    border-top-color: var(--main-block-border);
+    border-right-color: var(--main-block-border);
+    border-bottom-color: var(--main-block-border);
+    border-left-color: var(--main-block-border);
+}
+
+/* -- BORDERS -- */
+
+.node + .node {
+    border-top: 1px solid #777 !important;
+}
+
+.menu.menu--left.is-active.is-complete,
+.js-visitorMenuBody {
+    border: 1px dashed;
+}
+
+.block-header {
+    border-bottom: none;
+    font-weight: 700;
+}
+
+/* -- GRADIENTS -- */
+
+/* 'EXPAND' POST BLOCK */
+
+.bbCodeBlock-expandLink {
+    background: linear-gradient(to bottom, rgba(55, 55, 55, 0) 0%, #111 80%);
+}
+
+
+/* FOR PRIMARY NAV */
+
+.p-nav {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(159deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 24%, rgba(5, 47, 107, 1) 36%, rgba(0, 212, 255, 1) 77%, rgba(0, 255, 80, 1) 100%);
+}
+
+/* FRONT PAGE CATEGORY BLOCK HEADERS */
+
+.block.block--category.block--category4 .block-header {
+    background: rgb(131, 58, 180);
+    background: linear-gradient(135deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 100%);
+}
+
+.block.block--category.block--category5 .block-header {
+    background: rgb(34, 193, 195);
+    background: linear-gradient(135deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+}
+
+.block.block--category.block--category194 .block-header {
+    background: rgb(0, 74, 210);
+    background: linear-gradient(135deg, rgba(0, 74, 210, 1) 0%, rgba(45, 228, 253, 1) 100%);
+}
+
+.block.block--category.block--category7 .block-header {
+    background: rgb(131, 58, 180);
+    background: linear-gradient(135deg, rgba(131, 58, 180, 1) 0%, rgba(29, 4, 60, 1) 100%);
+}
+
+.block.block--category.block--category60 .block-header {
+    background: rgb(63, 94, 251);
+    background: linear-gradient(135deg, rgba(63, 94, 251, 1) 0%, rgba(234, 70, 252, 1) 100%);
+}
+
+.block.block--category.block--category192 .block-header {
+    background: rgb(238, 174, 202);
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(223, 176, 208, 1) 52%, rgba(148, 187, 233, 1) 100%);
+}
+
+.block.block--category.block--category8 .block-header {
+    background: linear-gradient(135deg, #00d2ff 0%, #3a47d5 100%);
+}
+
+.block.block--category.block--category6 .block-header {
+    background: linear-gradient(135deg, #00C9FF 0%, #92FE9D 100%);
+}
+
+.block.block--category.block--category42 .block-header {
+    background: linear-gradient(90deg, #3A1C71 0%, #FDBB2D 100%);
+}
