@@ -3,6 +3,7 @@
 - VARIABLES
 - PRIMARY BACKGROUND COLOR
 - TEXT MODS & LINK COLORS
+- BANNER BACKGROUND
 - BORDERS
 - GRADIENTS
 -- 'EXPAND' POST BLOCK
@@ -82,6 +83,7 @@ li.message > div,
 .block-container,
 .block-filterBar,
 .block-footer.js-newsFeedLoadMore,
+.blockMessage,
 .button.button--link,
 .formRow > dt,
 .formRow.formRow--input > dt,
@@ -112,6 +114,13 @@ li.message > div,
     border-right-color: var(--main-block-border);
     border-bottom-color: var(--main-block-border);
     border-left-color: var(--main-block-border);
+}
+
+/* -- BANNER BACKGROUND -- */
+.p-header {
+    background-image: url('https://raw.githubusercontent.com/ikcerog/Stylus-Customs/master/spaceshipearthbanner.jpg');
+    background-size: cover;
+    background-position: center center;
 }
 
 /* -- BORDERS -- */
